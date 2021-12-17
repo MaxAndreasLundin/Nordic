@@ -1,0 +1,204 @@
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+
+  --site-padding: 1em;
+  --site-width: 900px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+html {
+  font-size: calc(0.7rem + 0.4vmin);
+}
+
+h1 {
+  color: var(--nord0);
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  color: var(--nord4);
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.6rem;
+  background: url(/images/jakub-brabec-J9cR3W4Qtgg-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  line-height: 1.5;
+}
+
+/* Navigation */
+header {
+  text-align: center;
+  margin-bottom: 4rem;
+  background: var(--nord2);
+}
+
+nav {
+  padding: 0.7rem;
+  max-width: var(--site-width);
+  padding-left: var(--site-padding);
+  padding-right: var(--site-padding);
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav li {
+  margin: 0.5rem 0;
+}
+
+nav a {
+  color: var(--nord4);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--nord6);
+}
+
+@media screen and (min-width: 768px) {
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  nav li {
+    margin: 0 1rem;
+  }
+}
+
+/* Blocks */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  max-width: var(--site-width);
+  padding-top: 0;
+  padding-left: var(--site-padding);
+  padding-right: var(--site-padding);
+  padding-bottom: 3em;
+  margin: auto;
+}
+
+.container__row {
+  flex-direction: row;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container__row {
+    flex-direction: column;
+  }
+}
+
+.box {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box--team:hover {
+  transform: perspective(150px) translateZ(50px) rotateZ(360deg);
+  transition: 1.3s;
+}
+
+.box--team {
+  max-width: 30vh;
+  max-height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 4rem;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  color: var(--nord3);
+}
+
+/* FORM */
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  border: 1px solid var(--nord0);
+  color: var(--nord0);
+}
+
+input[type="submit"] {
+  max-width: 7em;
+  background-color: var(--nord0);
+  color: var(--nord4);
+}
+
+label {
+  color: var(--nord0);
+}
+
+a[href^="mailto:"],
+a[href^="tel:"] {
+  text-decoration: none;
+  color: var(--nord0);
+}
+
+a[href^="mailto:"]:hover,
+a[href^="tel:"]:hover {
+  color: var(--nord6);
+}
