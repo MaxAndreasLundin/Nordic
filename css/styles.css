@@ -48,13 +48,9 @@ h1 {
   letter-spacing: 0.2em;
 }
 
-h2 {
-  color: var(--nord4);
-  text-align: center;
-  letter-spacing: 0.2em;
-}
-
-h3 {
+h2,
+h3,
+h4 {
   color: var(--nord4);
   text-align: center;
   letter-spacing: 0.2em;
@@ -170,13 +166,12 @@ main {
 }
 
 .box--solo {
-  max-width: 20vh;
-  max-height: 20vh;
+  max-width: 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
   float: left;
-  margin-right: 10px;
+  margin-right: 1em;
 }
 
 footer {
@@ -216,6 +211,8 @@ a[href^="mailto:"],
 a[href^="tel:"] {
   text-decoration: none;
   color: var(--nord0);
+  text-align: center;
+  display: block;
 }
 
 a[href^="mailto:"]:hover,
@@ -232,8 +229,9 @@ a[href^="tel:"]:hover {
 
 .skills {
   text-align: right;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 0.5em;
   color: var(--nord0);
 }
 
@@ -257,4 +255,32 @@ a[href^="tel:"]:hover {
 .warfare {
   width: 45%;
   background-color: var(--nord15);
+}
+
+.gymrat {
+  width: 95%;
+  background-color: var(--nord11);
+}
+.tvirlapen {
+  width: 75%;
+  background-color: var(--nord12);
+}
+.moonwalk {
+  width: 70%;
+  background-color: var(--nord13);
+}
+.sql {
+  width: 50%;
+  background-color: var(--nord14);
+}
+
+.beatbox {
+  width: 45%;
+  background-color: var(--nord15);
+}
+
+.quote {
+  position: relative;
+  font-style: italic;
+  color: var(--nord0);
 }
