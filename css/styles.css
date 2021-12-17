@@ -34,6 +34,10 @@ img {
   border-radius: 30px;
 }
 
+p {
+  color: var(--nord0);
+}
+
 html {
   font-size: calc(0.7rem + 0.4vmin);
 }
@@ -45,6 +49,12 @@ h1 {
 }
 
 h2 {
+  color: var(--nord4);
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+h3 {
   color: var(--nord4);
   text-align: center;
   letter-spacing: 0.2em;
@@ -159,6 +169,16 @@ main {
   margin: 4rem;
 }
 
+.box--solo {
+  max-width: 20vh;
+  max-height: 20vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  float: left;
+  margin-right: 10px;
+}
+
 footer {
   margin-top: auto;
   display: flex;
@@ -201,4 +221,40 @@ a[href^="tel:"] {
 a[href^="mailto:"]:hover,
 a[href^="tel:"]:hover {
   color: var(--nord6);
+}
+
+/* Skill Bar */
+
+.container--bar {
+  width: 100%;
+  background-color: var(--nord4);
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: var(--nord0);
+}
+
+.animals {
+  width: 90%;
+  background-color: var(--nord11);
+}
+.arithmetic {
+  width: 80%;
+  background-color: var(--nord12);
+}
+.astronomy {
+  width: 65%;
+  background-color: var(--nord13);
+}
+.diplomacy {
+  width: 60%;
+  background-color: var(--nord14);
+}
+
+.warfare {
+  width: 45%;
+  background-color: var(--nord15);
 }
