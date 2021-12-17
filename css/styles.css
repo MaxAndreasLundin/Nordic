@@ -284,3 +284,17 @@ a[href^="tel:"]:hover {
   font-style: italic;
   color: var(--nord0);
 }
+
+/* Logo */
+
+.logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 20%;
+  height: auto;
+  margin: 1em;
+}
