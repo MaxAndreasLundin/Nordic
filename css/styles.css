@@ -294,57 +294,14 @@ a[href^="tel:"]:hover {
   margin: 1em;
 }
 
-/* Masonry */
-.masonry {
-  -moz-column-count: 1;
-  column-count: 1;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-  -moz-column-fill: balance;
-  column-fill: balance;
-  margin: 1em auto 0;
-  padding: 1rem;
-  text-align: center;
-}
-.masonry .item {
-  display: inline-block;
-  margin: 0 0 1em;
-  page-break-inside: avoid;
-  -moz-column-break-inside: avoid;
-  break-inside: avoid;
-  width: 100%;
-}
-.masonry .item img {
-  width: 100%;
-  height: auto;
-}
-@media (min-width: 600px) {
-  .masonry {
-    -moz-column-count: 2;
-    column-count: 2;
-  }
-}
-@media (min-width: 900px) {
-  .masonry {
-    -moz-column-count: 3;
-    column-count: 3;
-  }
-}
-@media (min-width: 1200px) {
-  .masonry {
-    -moz-column-count: 4;
-    column-count: 4;
-  }
-}
-
 /* Checkbox */
 .checkbox {
   display: block;
   position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
+  padding-left: 2em;
+  margin-bottom: 0.5em;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1.6rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -363,8 +320,8 @@ a[href^="tel:"]:hover {
   position: absolute;
   top: 0;
   left: 0;
-  height: 25px;
-  width: 25px;
+  height: 1em;
+  width: 1em;
   background-color: var(--nord4);
 }
 
@@ -420,4 +377,47 @@ a[href^="tel:"]:hover {
 .showBtn {
   opacity: 0.8;
   transform: translateY(0);
+}
+
+/* Masonry */
+.masonry {
+  -moz-column-count: 1;
+  column-count: 1;
+  -moz-column-gap: 1em;
+  column-gap: 1em;
+  -moz-column-fill: balance;
+  column-fill: balance;
+  margin: 1em auto 0;
+  padding: 1rem;
+  text-align: center;
+}
+.masonry .item {
+  display: inline-block;
+  margin: 0 0 1em;
+  page-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+  width: 100%;
+}
+.masonry .item img {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 600px) {
+  .masonry {
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media (min-width: 900px) {
+  .masonry {
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .masonry {
+    -moz-column-count: 4;
+    column-count: 4;
+  }
 }
