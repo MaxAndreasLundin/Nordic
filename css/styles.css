@@ -204,6 +204,7 @@ textarea {
   padding: 0.5em;
   border: 1px solid var(--nord0);
   color: var(--nord0);
+  resize: none;
 }
 
 input[type="submit"] {
@@ -314,10 +315,10 @@ a[href^="tel:"]:hover {
   margin-bottom: 0.5em;
   cursor: pointer;
   font-size: 1.6rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  justify-content: inherit;
+  max-width: 10em;
 }
 
 .checkbox input {
@@ -458,5 +459,6 @@ a[href^="tel:"]:hover {
 @media (max-width: 768px) {
   .tooltip .tooltiptext {
     visibility: visible;
+    opacity: 0.8;
   }
 }
