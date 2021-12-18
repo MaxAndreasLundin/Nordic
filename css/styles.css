@@ -18,6 +18,9 @@
 
   --site-padding: 1em;
   --site-width: 900px;
+  --site-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
 *,
@@ -31,6 +34,7 @@ img {
   width: 100%;
   height: auto;
   border-radius: 30px;
+  display: block;
 }
 
 p {
@@ -45,6 +49,7 @@ h1 {
   color: var(--nord0);
   text-align: center;
   letter-spacing: 0.2em;
+  text-shadow: var(--site-shadow);
 }
 
 h2,
@@ -53,6 +58,7 @@ h4 {
   color: var(--nord4);
   text-align: center;
   letter-spacing: 0.2em;
+  text-shadow: var(--site-shadow);
 }
 
 body {
@@ -98,6 +104,7 @@ nav li {
 nav a {
   color: var(--nord4);
   text-decoration: none;
+  text-shadow: var(--site-shadow);
 }
 
 nav a:hover {
@@ -163,6 +170,10 @@ main {
   margin: 4rem;
 }
 
+.box--team img {
+  box-shadow: var(--site-shadow);
+}
+
 .box--solo {
   max-width: 30%;
   display: flex;
@@ -170,6 +181,7 @@ main {
   align-items: center;
   float: left;
   margin-right: 1em;
+  box-shadow: var(--site-shadow);
 }
 
 footer {
@@ -395,7 +407,9 @@ a[href^="tel:"]:hover {
 .masonry .item img {
   width: 100%;
   height: auto;
+  box-shadow: var(--site-shadow);
 }
+
 @media (min-width: 600px) {
   .masonry {
     column-count: 2;
@@ -427,17 +441,18 @@ a[href^="tel:"]:hover {
   background: var(--nord0);
   color: var(--nord4);
   text-align: center;
-  border-radius: 20px;
-  top: 0%;
+  border-radius: 30px;
+  top: 0;
   position: absolute;
   z-index: 1;
-  opacity: 0.8;
+  opacity: 0;
+  padding: 0.5em;
+  transition: opacity 0.5s linear;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
-  transform: perspective(150px);
-  transition: 1s;
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
