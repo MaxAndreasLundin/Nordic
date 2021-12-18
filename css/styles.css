@@ -381,21 +381,14 @@ a[href^="tel:"]:hover {
 
 /* Masonry */
 .masonry {
-  -moz-column-count: 1;
   column-count: 1;
-  -moz-column-gap: 1em;
-  column-gap: 1em;
-  -moz-column-fill: balance;
   column-fill: balance;
-  margin: 1em auto 0;
-  padding: 1rem;
   text-align: center;
 }
 .masonry .item {
   display: inline-block;
   margin: 0 0 1em;
   page-break-inside: avoid;
-  -moz-column-break-inside: avoid;
   break-inside: avoid;
   width: 100%;
 }
@@ -405,19 +398,50 @@ a[href^="tel:"]:hover {
 }
 @media (min-width: 600px) {
   .masonry {
-    -moz-column-count: 2;
     column-count: 2;
   }
 }
 @media (min-width: 900px) {
   .masonry {
-    -moz-column-count: 3;
     column-count: 3;
   }
 }
 @media (min-width: 1200px) {
   .masonry {
-    -moz-column-count: 4;
     column-count: 4;
+  }
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: var(--nord0);
+  color: var(--nord4);
+  text-align: center;
+  border-radius: 20px;
+  top: 0%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transform: perspective(150px);
+  transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .tooltip .tooltiptext {
+    visibility: visible;
   }
 }
