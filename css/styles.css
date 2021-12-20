@@ -76,6 +76,12 @@ body {
 }
 
 /* Navigation */
+nav a {
+  color: var(--nord4);
+  text-decoration: none;
+  text-shadow: var(--site-shadow);
+}
+
 #hamnav {
   width: 100%;
   background: var(--nord0);
@@ -88,7 +94,6 @@ body {
 #hamitems a {
   padding: 10px;
   color: var(--nord4);
-  text-decoration: none;
   text-align: center;
 }
 #hamitems a:hover {
@@ -105,7 +110,6 @@ body {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 1px solid var(--nord0);
   }
 
   #hamnav label {
@@ -113,7 +117,7 @@ body {
     color: var(--nord4);
     background: var(--nord3);
     font-style: normal;
-    font-size: 1.2em;
+    font-size: 1em;
     padding: 10px;
   }
 
