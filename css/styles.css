@@ -84,7 +84,7 @@ nav a {
 
 #hamnav {
   width: 100%;
-  background: var(--nord0);
+  background: var(--nord2);
 }
 
 #hamitems {
@@ -113,11 +113,9 @@ nav a {
   }
 
   #hamnav label {
-    display: inline-block;
+    display: flex;
     color: var(--nord4);
-    background: var(--nord3);
-    font-style: normal;
-    font-size: 1em;
+    background: var(--nord0);
     padding: 10px;
   }
 
